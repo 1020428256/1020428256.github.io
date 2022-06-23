@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" type="text/css" href="css/my_hobbies.css">
+    <title>Document</title>
+</head>
+<body> 
+  
+    <div id="header">
+        <div class="inner"></div>    
+    </div>
+    <div id="nav">
+    <ul><!--使用无序列表，划分为四个列表项分别为首页、、个人简介、我的家乡、兴趣爱好四个页面 -->
+    <li><a href="index.html">首页</a></li>
+    <li  class="selected"><a href="introduction.html">个人简介</a></li>
+    <li><a href="my_hometown.html">我的家乡</a></li>
+    <li><a href="my_hobbies.html">我的爱好</a></li>
+   </ul>
+    </div> 
+
+    <div id="container">
+    <div id="draw">   
+        <div class="border"></div>    
+        <div class="illustrate">  
+        <h1>绘画</h1>
+        <p> &emsp;&emsp;从我小学时候起，我就对绘画产生了浓厚的兴趣，每当画画的时候，我总能沉浸其中而忘记时间。通过自学和临摹各种喜欢的画作我学习到了很多的绘画技巧，
+            技术得到了逐渐的提升，这也对我的审美产生了一定的影响。所以从小学到高中，我都担任班级画黑板报和班级文化建设的工作，而我尤其喜欢画各种动漫人物，所以我的作品大部分都是这一类型的手绘。</p>
+        </div>
+        <ul id="images_box1">
+            <input type="radio" name="options1" id="option1">
+            <input type="radio" name="options1" id="option2">
+            <input type="radio" name="options1" id="option3">
+            <input type="radio" name="options1" id="option4">
+            <li class="image1"></li>
+            <li class="image1"></li>
+            <li class="image1"></li>
+            <li class="image1"></li>
+            <div class="options_visible">
+                <label for="option1"></label>
+                <label for="option2"></label>
+                <label for="option3"></label>
+                <label for="option4"></label>
+            </div>
+            <!-- 使用表单结构、使选项可视化 -->
+        </ul> 
+    </div>    
+   
+    <!-- 图片轮播图采用无序列表的架构 -->
+    <div id="photography"> 
+        <div class="border"></div>
+        <div class="illustrate">
+        <h1>摄影</h1>
+        <p> &emsp;&emsp;我开始了解摄影是在我初中的时候，当时的我喜欢逛贴吧，我最喜欢的一个吧就是森女吧，有很多人在这里分享自己制作的手工，摘抄的
+            文艺句子，当然，还有自己的摄影作品。森女系那独有的自然，唯美的风格深深的吸引了我，我也开始学会自己去学习拍照。我认为一个人的摄影
+            作品能够表达出很多的情感和信息。到后来，喜欢上了古风，我开始尝试约我的朋友进行拍照，同时收获了许多令我满意的作品。
+        </p>
+       
+    </div>
+
+    <ul id="images_box2">
+        <input type="radio" name="options2" id="option5">
+        <input type="radio" name="options2" id="option6">
+        <input type="radio" name="options2" id="option7">
+        <input type="radio" name="options2" id="option8">
+        <li class="image2"></li>
+        <li class="image2"></li>
+        <li class="image2"></li>
+        <li class="image2"><img src="./image/photo1.png" alt="图片4" style="height:40px; width:40px;position: relative;"></li>
+        <div class="options_visible">
+            <label for="option5"></label>
+            <label for="option6"></label>
+            <label for="option7"></label>
+            <label for="option8"></label>
+           
+        </div>
+        <!-- 使用表单结构、使选项可视化 -->
+    </ul> 
+    </div>
+    
+    </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

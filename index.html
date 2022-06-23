@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link  rel="stylesheet" type="text/css" href="css/index.css">
+    <title>home page</title>
+
+</head>
+<body>
+    <div id="header">
+        <div class="inner"></div>    
+    </div>
+    <div id="nav">
+    <ul><!--使用无序列表，划分为四个列表项分别为首页、、个人简介、我的家乡、兴趣爱好四个页面 -->
+    <li><a href="homepage.html">首页</a></li>
+    <li ><a href="introduction.html">个人简介</a></li>
+    <li><a href="my_hometown.html">我的家乡</a></li>
+    <li><a href="my_hobbies.html">我的爱好</a></li>
+   </ul>
+    </div>
+    <div id="container">
+        <script>
+            var m=document.getElementById("m");
+            //每200毫秒执行一次下边的函数
+            setInterval(snowDown,500);
+            //一个雪花从出生到死亡的全过程
+            function snowDown() {
+                //创建雪花
+                var snow = document.createElement('div');
+                var txt = document.createTextNode('.');
+                snow.appendChild(txt);
+                m.appendChild(snow);
+        
+                //将雪花放在合适的位置
+                //将雪花散布在横向的位置
+                var y = -50;
+                var z = Math.random() * 1000;
+                snow.style.left = Math.random() * 1000 + "px";
+                //雪花的垂直位置
+                snow.style.top = y + "px";
+                //雪花的大小标记计算
+                snow.style.fontSize = Math.abs(z * 0.07 - 70) + 10 + "px";
+                //清晰度的标记计算
+                snow.style.opacity = Math.abs(z * 0.0006 - 0.6) + 0.2;
+            }
+        
+            //雪花下落
+                down();
+                function down() {
+                    //每隔13毫秒执行本身down()函数
+                    if(y>666)
+                    {
+                        snow.remove();
+                    }
+                    else
+                    {
+        
+                     //数值计算，标记雪花下落速度不同
+                        y +=Math.abs( z/1000-1)+0.5;
+                        snow.style.top =y+"px";
+                        setTimeout(down,13);
+                    }
+                    setTimeout(down,13);
+                }
+        
+        
+        </script>
+    <div class="inner">
+        <div id="cont1">
+         <a href="introduction.html">
+            <div id="img_cont1"></div>
+            <div class="headline_cont">个人简介</p></div>
+           </div> 
+          </a>
+        <div id="cont2">
+            <a href="my_hometown.html">
+            <div id="img_cont2"></div>
+            <div class="headline_cont">我的家乡</div>
+       </a>
+        </div>
+        <div id="cont3">
+            <a href="my_hobbies.html">
+            <div id="img_cont3"></div>
+            <div class="headline_cont">我的爱好</div>
+        </a>
+        </div>   
+    </div>
+    <!-- 这里给每个块加了一个超链接 -->
+    </div>
+ <div id="footer">
+
+ </div>
+</body>
+</html>

@@ -1,0 +1,376 @@
+body{
+    width: 1260px;
+    height: 1000px;
+    background-color: rgb(247, 218, 223);
+    margin: 0px;
+ 
+}
+
+div#nav ul li a{   
+     color: white;
+     text-decoration: none;
+     
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 600;
+     font-size: large;
+     margin: 0px;
+     display:block;
+     line-height: 50px;
+}
+div#nav ul li a:hover{
+    background-color:rgb(247, 231, 234);
+}      /* 使用悬停效果，使导航栏更加美观*/
+div#header{
+    height: 80px;
+    width: 1260px;
+    background-color: rgb(193, 100, 115);
+    margin: 0px;
+}
+div#nav{
+    width: 1260px;
+    height:50px;
+    background-color:rgb(226, 167, 187);
+    margin: 0px;
+
+} 
+div.inner{
+    width: 1260px; 
+    margin:0 auto;
+    background-color: plum;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#nav ul {
+	margin: 0px;
+    padding: 0px;
+}
+div#nav ul li {
+    color: white;
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    width:25%;
+    text-align: center;
+    float: left;
+
+}
+
+
+div#container {
+    height: 900px;
+    width:  1260px;
+    background-color:rgb(237, 216, 219);
+    margin:0;
+    position: relative;/* 采用相对定位 */
+    background-image: url(../image/background6.jpg);
+    background-size:500px 1000px ;
+}
+
+
+div#container div#draw{
+    height: 400px;
+    width: 1000px;
+    position: absolute; /* 采用绝对定位 */
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+    border: 5px double palevioletred;
+    border-radius:50px;
+}
+
+div#photography{
+    height: 400px;
+    width: 1000px;
+    position: absolute; /* 采用绝对定位 */
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto;
+    margin-top: 460px;
+    background-color: white;
+    border: 5px double palevioletred;
+    border-radius:50px;
+  
+ }   
+ div.illustrate{
+    width: 450px;
+    height: 350px;
+    background-color: rgb(249, 240, 227);
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+    line-height: 2em;
+}
+ h1{
+    color: rgb(223, 172, 181);
+    font-size: 35px;
+    font-family: "字体2";
+    text-align: center;
+ }
+ .border{
+    width: 30px;
+    height:350px;
+    position:absolute;
+    margin-left: 480px;
+    margin-top: 20px;
+    background-image: url(../image/decoration1.png) ;
+    background-repeat: repeat-y;
+   background-size: 20px 20px;
+}
+/* border是起装饰作业的的分割线，采用绝对定位*/
+
+#images_box1{
+    height: 350px;
+    width: 450px;
+    margin:25px;
+    margin-left: 40px;
+    position:relative;
+    /* 采用相对定位 */
+    list-style: none;
+    padding: 0px;
+    float: left;
+    overflow: hidden;
+}
+#images_box2{
+    height: 350px;
+    width: 450px;
+    margin:25px;
+    margin-left: 40px;
+    position:relative;
+    /* 采用相对定位 */
+    list-style: none;
+    padding: 0px;
+    float: left;
+    overflow: hidden;
+}
+.image1,.image2{
+    margin: 0px;
+    padding: 0px;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    /* 采用绝对定位 */
+    top:0px;
+    left:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Helvetica;
+    font-size: 120px;
+    color: white;
+    transition:.5s;
+    transform:ease-in-out;
+}
+.image1:nth-last-of-type(1){
+    background-image: url(../image/draw1.png);
+}
+.image1:nth-last-of-type(2){
+    background-image: url(../image/draw2.png);
+    left: 100%;
+}
+    /*使得第二张图在第一张图右边，最终四张图横向并列。 */
+.image1:nth-last-of-type(3){
+    background-image: url(../image/draw3.png);
+     left: 200%;
+}
+   
+.image1:nth-last-of-type(4){
+    background-image: url(../image/draw4.png);
+    left: 300%;
+}
+
+.image2:nth-last-of-type(1){
+    background-image: url(../image/photo1.png);
+}
+.image2:nth-last-of-type(2){
+    background-image: url(../image/photo2.png);
+    left: 100%;/*使得第二张图在第一张图右边，最终四张图横向并列。 */
+}
+.image2:nth-last-of-type(3){
+    background-image: url(../image/photo3.png);
+     left: 200%;
+}
+.image2:nth-last-of-type(4){
+    background-image: url(../image/photo4.png);
+    left: 300%;
+}
+
+
+input[type="radio"]{
+     position: relative;
+     z-index: 100;
+     display: none;
+     /* 隐藏input框 */
+}
+.options_visible{
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+}
+.options_visible label{
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+   background-color: white;
+   border-radius: 50%;
+   margin: 0 3px;
+   border: 2px solid white;
+}
+
+#images_box1 input[type="radio"]:nth-of-type(1)~
+.options_visible label:nth-of-type(1){
+    background-image: url(../image/draw1.png);
+    background-size: 40px 40px;
+}
+#images_box1 input[type="radio"]:nth-of-type(2)~
+.options_visible label:nth-of-type(2){
+    background-image: url(../image/draw2.png);
+    background-size: 40px 40px;
+}
+#images_box1 input[type="radio"]:nth-of-type(3)~
+.options_visible label:nth-of-type(3){
+    background-image: url(../image/draw3.png);
+    background-size:  40px 40px;
+}
+#images_box1 input[type="radio"]:nth-of-type(4)~
+.options_visible label:nth-of-type(4){
+    background-image: url(../image/draw4.png);
+    background-size:  40px 40px;
+}
+
+#images_box2 input[type="radio"]:nth-of-type(1)~
+.options_visible label:nth-of-type(1){
+    background-image: url(../image/photo1.png);
+    background-size: 40px 40px;
+}
+#images_box2 input[type="radio"]:nth-of-type(2)~
+.options_visible label:nth-of-type(2){
+    background-image: url(../image/photo2.png);
+    background-size: 40px 40px;
+}
+#images_box2 input[type="radio"]:nth-of-type(3)~
+.options_visible label:nth-of-type(3){
+    background-image: url(../image/photo3.png);
+    background-size: 40px 40px;
+}
+
+/* 在选中之前，可以看到每张图片的缩略图片 */
+
+#images_box2 input[type="radio"]:nth-of-type(3)~
+.options_visible label:nth-of-type(3):hover{
+   background-size: 60px 60px;
+
+}
+#images_box2 input[type="radio"]:nth-of-type(3)~
+.options_visible label:nth-of-type(3){
+    background-image: url(../image/photo3.png);
+    background-size: 40px 40px;
+}
+#images_box2 input[type="radio"]:nth-of-type(4)~
+.options_visible label:nth-of-type(4){
+    background-image: url(../image/photo4.png);
+    background-size: 40px 40px;
+}
+/* 在选中之前，可以看到每张图片的缩略图 */
+#images_box1 input[type="radio"]:nth-of-type(1)~
+.options_visible label:nth-of-type(1):hover{
+   background-size: 60px 60px;
+
+}#images_box1 input[type="radio"]:nth-of-type(2)~
+.options_visible label:nth-of-type(2):hover{
+   background-size: 60px 60px;
+
+}#images_box1 input[type="radio"]:nth-of-type(3)~
+.options_visible label:nth-of-type(3):hover{
+   background-size: 60px 60px;
+
+}#images_box1 input[type="radio"]:nth-of-type(4)~
+.options_visible label:nth-of-type(4):hover{
+   background-size: 60px 60px;
+
+}#images_box2 input[type="radio"]:nth-of-type(1)~
+.options_visible label:nth-of-type(1):hover{
+   background-size: 60px 60px;
+
+}#images_box2 input[type="radio"]:nth-of-type(2)~
+.options_visible label:nth-of-type(2):hover{
+   background-size: 60px 60px;
+
+}#images_box2 input[type="radio"]:nth-of-type(3)~
+.options_visible label:nth-of-type(3):hover{
+   background-size: 60px 60px;
+
+}
+#images_box2 input[type="radio"]:nth-of-type(4)~
+.options_visible label:nth-of-type(4):hover{
+   background-size: 60px 60px;
+
+}
+/* 用悬空来产生视觉放大的效果，区分未选中和选中 */
+
+#images_box1 input[type="radio"]:nth-of-type(1):checked ~.image1{
+    transform: translatex(0%);
+}
+#images_box1 input[type="radio"]:nth-of-type(2):checked ~.image1{
+    transform: translatex(-100%); /*向左移一倍的宽度，以此类推  */
+}
+#images_box1 input[type="radio"]:nth-of-type(3):checked ~.image1{
+    transform: translatex(-200%);
+}
+#images_box1 input[type="radio"]:nth-of-type(4):checked ~.image1{
+    transform: translatex(-300%);
+}
+#images_box2 input[type="radio"]:nth-of-type(1):checked ~.image2{
+    transform: translatex(0%);
+}
+#images_box2 input[type="radio"]:nth-of-type(2):checked ~.image2{
+    transform: translatex(-100%); 
+}
+#images_box2 input[type="radio"]:nth-of-type(3):checked ~.image2{
+    transform: translatex(-200%);
+}
+#images_box2 input[type="radio"]:nth-of-type(4):checked ~.image2{
+    transform: translatex(-300%);
+}
+/* 此处设置选中第一个radio按钮之后，后面四张.image的样式 */
+
+@font-face {
+    font-family:"字体1"; 
+    src:url(../font/字体1.ttf) format('truetype');
+}
+@font-face {
+    font-family:"字体2"; 
+    src:url(../font/字体2.ttf) format('truetype');
+}
+ /* 添加一种新的字体 */
+div.illustrate p{
+    color: rgb(67, 38, 43);
+    font-family:"字体1";
+    padding: 10px;
+}
+
+
+div#footer{
+    with: 100%;
+    height: 50px;
+    background-color: rgb(193, 100, 115) ;
+ }
+ .bg {
+    position: relative;
+  }
+  
+  .position1 {
+      position: absolute;
+      top: 0;
+      left: 270px;
+      animation: fallDown 3s infinite;
+      animation-fill-mode: forwards;
+    }
+  

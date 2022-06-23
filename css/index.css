@@ -1,0 +1,174 @@
+body{
+    width: 1260px;
+    background-color: rgb(247, 218, 223);
+    margin: 0px;
+    
+ 
+}
+ a{   
+     color: white;
+     text-decoration: none;
+     font-size: large;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: 600;
+     margin: 0px;
+     display:block;
+     line-height: 50px;
+}
+div#nav ul li a:hover{
+    background-color:rgb(247, 231, 234);
+}      /* 使用悬停效果，使导航栏更加美观*/
+div#header{
+    height: 80px;
+    width: 1260px;
+    background-color: rgb(193, 100, 115);
+    margin: 0px;
+}
+div#nav{
+    width: 1260px;
+    height:50px;
+    background-color:rgb(226, 167, 187);
+    margin: 0px;
+
+} 
+div.inner{
+    width:1260px; 
+    margin:0 auto;
+    background-color: plum;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#nav ul {
+	margin: 0px;
+    padding: 0px;
+}
+div#nav ul li {
+    color: white;
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    width:25%;
+    text-align: center;
+    float: left;
+    margin-left: 0px;
+
+}
+
+
+div#container {
+    height: 550px;
+    width:  1260px;
+    background-color:rgb(237, 216, 219);
+    margin:0;
+    background-image: url(../image/background1.jpg);
+    background-size: 400px 600px;
+    
+}
+
+
+div#container div.inner div#cont1,div#cont3{
+    width:350px;
+    height:400px;
+    margin: 20px;
+    background-color: white;
+    opacity: 80%;
+    float:left;
+    border-radius:350px/400px;
+    text-align: center;
+    box-shadow: 15px 15px 15px rgba(95, 95, 95, 0.5);
+    border: 5px double pink;
+}
+.url{
+    display: block;
+    width:350px;
+    height: auto;
+}
+div#container div.inner div#cont1:hover{
+    width:400px;
+    height:450px;
+    opacity: initial;
+}
+div#container div.inner div#cont2:hover{
+    width:400px;
+    height:450px;
+    opacity: initial;
+}
+div#container div.inner div#cont3:hover{
+    width:400px;
+    height:450px;
+    opacity: initial;
+}
+    /* 三个块都加入了悬空的样式，被选中时块的样式会发生一些变化，可以使得视觉效果更加强烈 */
+
+    @font-face {
+        font-family:"字体2"; 
+        src:url(../font/字体2.ttf) format('truetype');
+    }
+ div#container div.inner  div.headline_cont{
+     width: 200px;
+     height: 50px;
+     margin-top: 10px;
+     margin-left: auto;
+     margin-right: auto;  /*采用凝胶使标题居中 */    
+     color: rgb(178, 87, 116);
+     font-family:"字体2";
+     font-size: 25px;
+     font-weight: 700;
+     text-align: center;
+ }
+
+ div#container div.inner div#cont2{
+    width:350px;
+    height:400px;
+    margin: 20px;
+    margin-top: 80px;
+    background-color: white;
+    opacity: 80%;
+    float:left;
+    border-radius:350px/400px;
+    border: 5px double pink;
+    box-shadow: 15px 15px 15px rgba(95, 95, 95, 0.5);
+  /* 为了优化美观，采用了阴影的效果 */
+} 
+ div#container div.inner  div#img_cont1,div#img_cont2 ,div#img_cont3{
+    width: 260px;
+    height: 260px;
+    background-color:white;
+    margin-top:72px;
+    margin-right: auto;
+    margin-left:auto;
+    background-image: url(../image/image1.jpg);
+    border-radius: 50px;
+   
+}
+div#container div.inner div#img_cont2 {
+    width: 260px;
+    height: 260px;
+    background-color:white;
+    margin-top:72px;
+    margin-right: auto;
+    margin-left:auto;
+    background-image: url(../image/image2.jpg);
+    border-radius: 50px;
+    opacity: initial;
+   
+}
+
+div#container div.inner div#img_cont3{
+    width: 260px;
+    height: 260px;
+    background-color:white;
+    margin-top:72px;
+    margin-right: auto;
+    margin-left:auto;
+    background-image: url(../image/image3.jpg);
+    border-radius: 50px;
+   
+}
+
+ div#footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(193, 100, 115) ;
+ }
